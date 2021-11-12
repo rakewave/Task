@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section>
+    <div class="container">
+      <h3 style="text-align: center; margin-top: 35px; color: rgb(75, 75, 206);">Calculate Your Rewords</h3>
+
+      <div class="row">
+        <div class="col-25">
+          <label>Vendor/Bills</label>
+        </div>
+        <div class="col-75">
+          <input value="0" min="0" class="mtc" type="number" id="vendor" placeholder="Enter a number">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label>Media/Ad Spend</label>
+        </div>
+        <div class="col-75">
+          <input  value="0" min="0" class="mtc" type="number" id="media" placeholder="Enter a number">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label>Corp.Spend</label>
+        </div>
+        <div class="col-75">
+          <input  value="0" min="0" class="mtc" type="number" id="corp" placeholder="Enter a number">
+        </div>
+      </div>      
+      <div class="row">
+        <div class="col-25">
+          <label>Team Project</label>
+        </div>
+        <div class="col-75">
+          <input  value="0" min="0" class="mtc" type="number" id="team" placeholder="Enter a number">
+        </div>
+      </div>
+      <h3 style="text-align: center; margin-top: 35px; color: rgb(75, 75, 206);">Compare Your Rewords</h3>
+      <div class="row cliClass">
+        <a class="myButton" onclick="currentSlide(3)">Amex</a>
+        <a class="myButton"  onclick="currentSlide(2)">Stripe</a>
+        <a class="myButton" onclick="currentSlide(1)">Brex</a>
+      </div>
+
+      </div>
+      <br>
+
+    </div>
+
+  </section>
+
+<br>
+<br>
+<section style="display: none;" id=show>
+  
+  <div class="slide1 slideshow-container">
+
+    <div class="indecator" style="text-align:center">
+      <div class="dot" onclick="currentSlide(1)"></div>
+      <div class="dot dot1" onclick="currentSlide(2)"></div>
+      <div class="dot dot2" onclick="currentSlide(3)"></div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+
+    <br><br>
+    <div class="mySlides fade">
+
+      <div class="card">
+        <div class="card_img" style="float: left;"><img src="img/it-card-left-L-removebg-preview.png"
+            style="width:100%"></div>
+        <div class="infograph">
+          <div style="display: flex; flex-flow: row;">
+            <div class="card-text">
+              <h4>Amex bussness Card</h4>
+            </div>
+            <div style="width: 100%;display:flex;flex-flow: row;align-items: center;justify-items: center;">
+              <div class="meter">
+                <span class="span1"></span>
+              </div>
+                <p id="amexCard" style="padding-bottom: 10px;padding-left: 10px;">$0</p>
+            </div>
+
+          </div>
+          <div style="display: flex; flex-flow: row;">
+            <div class="card-text">
+              <h4>Unlimated Rewards</h4>
+            </div>
+            <div style="width: 100%;display:flex;flex-flow: row;align-items: center;justify-items: center;">
+              <div class="meter1">
+                <span class="span1" ></span>
+              </div>
+                <p id="unlimated" style="padding-bottom: 10px; padding-left: 10px ;">$0</p>
+            </div>
+
+          </div>
+          <div style="display: flex; flex-flow: row;">
+            <div class="card-text">
+              <h4>LIFETIME REWARDS</h4>
+            </div>
+            <div style="width: 100%;display:flex;flex-flow: row;align-items: center;justify-items: center;">
+              <div class="meter2">
+                <span ></span>
+              </div>
+                <p id="life" style="padding-bottom: 10px;padding-left: 10px;">$0</p>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="slide2 mySlides fade">
+
+      <div class="card">
+        <div class="card_img" style="float: left;"><img src="img/it-card-left-L-removebg-preview.png"
+            style="width:100%"></div>
+        <div class="infograph">
+          <div style="display: flex; flex-flow: row;">
+            <div class="card-text">
+              <h4>Stripe bussness Card</h4>
+            </div>
+            <div style="width: 100%;display:flex;flex-flow: row;align-items: center;justify-items: center;">
+              <div class="meter">
+                <span class="span1"></span>
+              </div>
+                <p id="StripeCard" style="padding-bottom: 10px;padding-left: 10px;">$0</p>
+            </div>
+
+          </div>
+          <div style="display: flex; flex-flow: row;">
+            <div class="card-text">
+              <h4>Unlimated Rewards</h4>
+            </div>
+            <div style="width: 100%;display:flex;flex-flow: row;align-items: center;justify-items: center;">
+              <div class="meter1">
+                <span class="span1" ></span>
+              </div>
+                <p id="unlimated" style="padding-bottom: 10px; padding-left: 10px ;">$0</p>
+            </div>
+
+          </div>
+          <div style="display: flex; flex-flow: row;">
+            <div class="card-text">
+              <h4>LIFETIME REWARDS</h4>
+            </div>
+            <div style="width: 100%;display:flex;flex-flow: row;align-items: center;justify-items: center;">
+              <div class="meter2">
+                <span ></span>
+              </div>
+                <p id="life" style="padding-bottom: 10px;padding-left: 10px;">$0</p>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="slide3 mySlides fade">
+
+      <div class="card">
+        <div class="card_img" style="float: left;"><img src="img/it-card-left-L-removebg-preview.png"
+            style="width:100%"></div>
+        <div class="infograph">
+          <div style="display: flex; flex-flow: row;">
+            <div class="card-text">
+              <h4>Brex bussness Card</h4>
+            </div>
+            <div style="width: 100%;display:flex;flex-flow: row;align-items: center;justify-items: center;">
+              <div class="meter">
+                <span class="span1"></span>
+              </div>
+                <p id="BrexCard" style="padding-bottom: 10px;padding-left: 10px;">$0</p>
+            </div>
+
+          </div>
+          <div style="display: flex; flex-flow: row;">
+            <div class="card-text">
+              <h4>Unlimated Rewards</h4>
+            </div>
+            <div style="width: 100%;display:flex;flex-flow: row;align-items: center;justify-items: center;">
+              <div class="meter1">
+                <span class="span1" ></span>
+              </div>
+                <p id="unlimated" style="padding-bottom: 10px; padding-left: 10px ;">$0</p>
+            </div>
+
+          </div>
+          <div style="display: flex; flex-flow: row;">
+            <div class="card-text">
+              <h4>LIFETIME REWARDS</h4>
+            </div>
+            <div style="width: 100%;display:flex;flex-flow: row;align-items: center;justify-items: center;">
+              <div class="meter2">
+                <span ></span>
+              </div>
+                <p id="life"  style="padding-bottom: 10px;padding-left: 10px;">$0</p>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+  <br>
+
+</section> 
+  <br>
+
+  <script src="js/mine.js"></script>
+
+</body>
+
+</html>

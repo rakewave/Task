@@ -1,0 +1,314 @@
+* {box-sizing: border-box}
+body {font-family:sans-serif; margin:0;padding: 10px;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  box-shadow:inset 0px 0px 0px 2px #524f4f4f;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -28px;
+  color: #524f4f4f;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  user-select: none;
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.next {
+  right: -50px;
+  border-radius: 50%;
+
+}
+.prev{
+    left:-50px
+}
+.prev:hover, .next:hover {
+  background-color: rgba(37, 36, 36, 0.233);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.indecator{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.dot {
+background-image: url(../img/images-removebg-preview.png);
+background-size: 100% 100% ;
+background-repeat: no-repeat;
+  cursor: pointer;
+  height: 90px;
+  width: 120px;
+  box-shadow:inset 0px 0px 0px 3px #524f4f4f;
+  border-radius: 10%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  transform: scale(1.2);
+}
+.dot1{
+    background-image: url(../img/stripe-logo-removebg-preview.png);
+
+}
+.dot2{
+    background-image: url(../img/t_brex2680-removebg-preview.png);
+
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+.card_img{
+    float: left;
+    width: 40%;
+
+}
+
+.infograph{
+    margin-left: 2%;
+    width: 100%;
+    
+
+}
+
+
+
+.meter {
+    padding-top: 17px;
+    /* width: 10%; */
+      box-sizing: content-box;
+      height: 50px; /* Can be anything */
+      position: relative;
+      background: rgb(255, 255, 255);
+      /* box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3); */
+    } 
+  .meter1 {
+      padding-top: 17px;
+      /* width: 40%; */
+        box-sizing: content-box;
+        height: 50px; /* Can be anything */
+        position: relative;
+        background: rgb(255, 255, 255);
+        /* box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3); */
+      } 
+  .meter2 {
+        padding-top: 17px;
+        /* width: 100%; */
+          box-sizing: content-box;
+          height: 50px; /* Can be anything */
+          position: relative;
+          background: rgb(255, 255, 255);
+          /* box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3); */
+        } 
+    .infograph span {
+      display: block;
+      height: 50%;
+      border-top-right-radius: 9px 50%;
+      border-bottom-right-radius: 9px 50%;
+  
+      background-color: #0389E8;
+  
+      box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+        inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    .infograph .span1 {
+      display: block;
+      height: 50%;
+      border-top-right-radius: 9px 50%;
+      border-bottom-right-radius: 9px 50%;
+      background-color: #B8D1E5;
+  
+      box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+        inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+  .card{
+    display: flex;
+    flex-flow: row;
+  }
+  .card-text{
+    width: 35%;
+  }
+    
+@media only screen and (max-width: 1000px) {
+    .card{
+      flex-flow: column;
+      align-items: center;
+    }
+    .card_img{
+      width: 50%;
+      text-align: center;
+    }
+    .card-text{
+      width: 50%;
+    }
+    .indecator{
+      width: 80%;
+    }
+  }
+  
+
+/* +++++++++++++++++++++ */
+
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+        /* background-color: #665a5a; */
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  .row{
+    text-align: center;
+    justify-content: center;
+
+      display: flex;
+      flex-flow: row;
+      margin: auto;
+      width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .myButton {
+    margin: 10px;
+	box-shadow:inset 1px -2px 0px 2px #f2f2f2;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:14px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:14px;
+	font-style:italic;
+	padding:12px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.cliClass{
+    margin-top:20px ;
+}
+
+#show{
+    animation-name: fade;
+    animation-duration: 1.5s;
+    transition: 2s cubic-bezier(0.4, 0, 1, 1);
+}
+
+        
